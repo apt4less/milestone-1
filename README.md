@@ -90,7 +90,5 @@ Tab Navigation (After Signing up)
 ![img5](https://user-images.githubusercontent.com/60937532/155231995-682b4cb9-8d01-4e26-94aa-da0a3d3fde84.png)
 ![img6](https://user-images.githubusercontent.com/60937532/155232008-1d82d1bc-16c1-4843-b737-1202c7aa6a8c.png)
 ![img7](https://user-images.githubusercontent.com/60937532/155232012-6ce62732-7f1c-4f8e-8c3a-e11dbb0a6f2d.png)
-
-
-### Interactive Wireframe 
 ![img8](https://user-images.githubusercontent.com/60937532/155232018-57038df4-2e59-4dab-9616-89ba2f6b0b34.png)
+![Interactive_Wireframe](https://user-images.githubusercontent.com/71302450/155245992-dfa04131-ce60-4bbc-86b4-600c44aa9380.gif)
