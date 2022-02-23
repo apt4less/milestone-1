@@ -67,12 +67,13 @@ Tab Navigation (After Signing up)
 - Offer
 - Profile
 ## **Flow Navigation** 
-- Home- Display the purpose of the site. 
-- About us- Explain why this site was created along with the creator's picture and short bio. Also a way to reach out to us (Email, and phone number). 
-- Sign Up/Login- force login or sign up to get better opportunities on the site (Scholarships & Offer). 
-- Scholarships- Multiple scholarship Links available to help users pay rent or cover the deposit for an apartment (only available if account is created)
-- Offer- Apartment search based on zip code, price, bedrooms, pets. Provide any previously saved apartments on the side (only available if account is created)
+- Home--->encourage users to sign up to get better benefit. 
+- About us---->introducing users to creators and reasons behind APT4LESS. 
+- Sign Up/Login-->force login or sign up to get better opportunities on the site (Scholarships & Offer)--->Profile
 - Profile- Text field to be modified
+- Scholarships--->scholarships links to encourage users to apply for scholarships to help with rent--->another tab to scholarships site.
+- Offer--->Apartment search based on zip code, price, bedrooms, pets ------>filter apartment based on answers------>another tab to take users to apartments site.
+
 
 # Wireframes
 
