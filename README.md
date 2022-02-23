@@ -8,9 +8,8 @@
  # Overview
 
 ## Description
-![Interactive_Wireframe](https://user-images.githubusercontent.com/71302450/155245876-e314c8a5-1649-42c5-87e1-0d4d401223c4.gif)
-
 Apartments4Less is a website that shows opportunities for undergraduates and graduates to have housing . We demonstrate a way for college students to easily find cheap apartments around Tallahassee, especially for students who wished to live off campus. This website also provides links for current scholarships for individuals who can’t afford to pay rent or deposit for an apartment. This is a great way for students to spend less time and effort looking for an apartment all while dealing with their school work and personal lives. 
+
 ## App Evaluation
 
 - Category: Housing
