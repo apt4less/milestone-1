@@ -37,23 +37,25 @@ later looks
 
 **Login**
 **Sign up**
- - Gives users the ability  to access previous apartments of interest and/or scholarships of interest.
+ - Gives users the ability to access previous apartments of interest and/or scholarships of interest (optional)
 
 **Home** 
-- API banner and website design
+- Banner and words of encouragement to pursuade graduates and undergraduates located in tallahassee to sign up for the site. Give an overview of what APT4LESS is for. 
  
 **Scholarships** 
-- list of current scholarships to further assist the student
+- List of current scholarships to further assist the student with rent. 
 
 **Offer**
-- User can set price, bed number, and zip code
-- Given list of affordable apartments and contact information
+- Users can set price, bed number, zip code, pets, roommates to filter the apartment of their choice located in tallahassee. 
+- Given list of affordable apartments, contact information, and links to apartment site.
+- Users are able to save the apartment of their choice. 
 
 **About Us**
-- Allow user to interact with the creators if they have questions about site or if they would - - like to make a post
+- Explain to users how APT4LESS started. Creators of APT4LESS are also display with a picture and short bio. 
 
 **Profile**
-- Allow user to change their personal information
+- Allow user to change their personal information.
+- Display their favorite apartments on the side to help users keep track of which apartment they are interested in. 
 
 ## **3. Navigation**
 Tab Navigation (Without an account)
