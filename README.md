@@ -1,9 +1,11 @@
-# milestone-1
+# milestone2
+
 
 # Table of Contents
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
 
  # Overview
 
@@ -93,3 +95,101 @@ Tab Navigation (After Signing up)
 ![img7](https://user-images.githubusercontent.com/60937532/155232012-6ce62732-7f1c-4f8e-8c3a-e11dbb0a6f2d.png)
 ![img8](https://user-images.githubusercontent.com/60937532/155232018-57038df4-2e59-4dab-9616-89ba2f6b0b34.png)
 ![Interactive_Wireframe](https://user-images.githubusercontent.com/71302450/155245992-dfa04131-ce60-4bbc-86b4-600c44aa9380.gif)
+
+# Schema
+
+## Models
+
+### Login
+
+| Property    |  Type      |  Description   |
+|-------------|------------|----------------|
+| Username  |  Varchar  | Unique id for user login |
+| Password  |  Hashed string |  User unique Password to login  |
+| Reset User/Pass | Pointer to reset pass/user | Email entry for verification/reset pass/user |
+
+
+
+### Sign-Up
+
+| Property    |  Type      |  Description   |
+|-------------|------------|----------------|
+| Username  |  Varchar  | Unique id for user login |
+| Password  |  Hashed string |  User unique Password to login  |
+| name | string  |  Full name to be display on profile |
+| email  | varchar  |  user choice of contact  |
+
+### Offer
+
+| Property    |  Type      |  Description   |
+|-------------|------------|----------------|
+| Zip code | int | Unique ID for Apartment in tallahassee |
+| contact | string | Apartment phone number |
+ | Property Name(URL) | varchar | Link to property website if available.
+ | Email | varchar | Apartment email|
+ | price | int | User input rent range |
+ | Available beds | int | User input amount of bedrooms |
+ | pets | bool | User input(yes/no) for pets |
+ | roommates | bool | User input for sharing common area (yes/no) |
+ | favoriteCount | number | Keep track of all user save appartments |
+ | favoriteDelete | number | Keep track of all user unsave apartments |
+
+
+
+
+
+## Networking
+
+### List of network requests by screen
+
+### Profile/ Login-
+- (Read/GET) Query logged in user object
+- (Post) user name, email, and phone from login/sign up
+- (Update) Update user profile image/username, password, or contact info.
+- (Post) retrieve saved apartment, if any,  from offer page and post on profile page
+### SignUp-
+- (Create) New user login
+### Offers-
+- (Read/ Get) Retrieve apartment listing in Tallahassee based on user choice of zip code, beds, roommates, pets.
+- (Get) Retrieve Apartment phone number, email, and url.
+- (Delete) Unsave favorite apartment. 
+
+
+
+### Existing API Endpoints
+
+**Housing anywhere API**
+
+url: https://rapidapi.com/apimaker/api/zillow-com1/
+
+| HTTP VERB | ENDPOINT  | DESCRIPTION |
+|-----------|-----------|-------------|
+ | Get  | /propertyExtendedSearch | Search property by params.|
+ | Get | /property | Property details.|
+ | Get | /propertyByCoordinates | Search the property by coordinates.|
+ | Get | /similarProperty | Get similar properties for rent |
+ | Get | /locationSuggestions | Search a region by name. |
+ | Get | /rentEstimate | For more accuracy use beds and baths parameters. Rent estimates and comparable rentals.|
+
+
+
+**Realty Mole Property API**
+
+url: https://rapidapi.com/realtymole/api/realty-mole-property-api/
+ | HTTP VERB |  ENDPOINT  | DESCRIPTION | 
+ |----|----|-----|
+ | Get | /SalePriceEstimate |  rent price estimate along with comparable properties. | 
+ | Get | SaleListings |  Search for rent listings for specific properties or a list of properties based on your criteria| 
+ | Get | /RandomAddresses | ist of random addresses and corresponding property data. | 
+ | Get | /ZipCodeRental Data | Returns rental data for a specified zip code like the average rent by zip code, the number of rentals seen in that zip code | 
+
+
+
+
+
+
+
+
+
+
+
