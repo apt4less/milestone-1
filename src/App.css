@@ -1,0 +1,348 @@
+/*APP.JS style*/
+
+body, div{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: #4472ca;
+    text-align: center;
+    font-family: "Franklin Gothic Medium";
+    font-size: 4em;
+
+}
+
+h2{
+    color: #ed7d31;
+    text-align: center;
+    font-size: 2em;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: blue;
+}
+
+.logo
+{
+    position: fixed;
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    float: left;
+}
+
+.navbar
+{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: white;
+}
+
+
+.navbar a {
+    display: inline-block;
+    color: #ed7d31;
+    padding: 13px;
+    text-decoration: none;
+    font-size: 16px;
+    float: right;
+    font-family: Helvetica;
+
+
+}
+
+/* Change the color of links on mouse-over */
+.navbar a:hover {
+    background-color: #ed7d31;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.pill-nav a.active {
+
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    clear: left;
+    background-color: black;
+    color: white;
+    padding: 5px 0 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/*home page style*/
+
+.img-fluid{
+    width: 1344px;
+    height: 350px;
+    border: 3px solid #ed7d31;
+}
+
+p{
+    text-align: center;
+    font-family: Dubai;
+    font-size: 17px;
+}
+
+h3{
+    Text-align: center;
+    color: darkred;
+    font-size: 30px;
+}
+
+
+
+/*Login CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+input{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+::selection{
+    background: rgba(26,188,156,0.3);
+}
+.container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+}
+.wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+    height: 90px;
+    background: #ed7d31;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper form{
+    padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+form .row input:focus{
+    border-color: #ed7d31;
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+}
+form .row input::placeholder{
+    color: #999;
+}
+.wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #ed7d31;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper form .pass{
+    margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+    color: #ed7d31;
+    font-size: 17px;
+    text-decoration: none;
+}
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+    color: deepskyblue;
+}
+.wrapper form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #ed7d31;
+    border: 1px solid #ed7d31;
+    cursor: pointer;
+}
+form .button input:hover{
+    background: deepskyblue;
+}
+.wrapper form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.wrapper form .signup-link a{
+    color: #ed7d31;
+    text-decoration: none;
+}
+form .signup-link a:hover{
+    text-decoration: underline;
+    color: deepskyblue;
+}
+
+/* about us cards */
+
+hr{
+    color: #ffffff;
+}
+
+.card{
+    width: 29%;
+    float: left;
+    margin: 0% 1% 2%;
+    font-size: 0.9em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2px 15px;
+}
+
+.Nehemie, .Xavier, .Milik{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.btn-secondary{
+    background-color: #ed7d31; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+
+
+/*Scholarship page*/
+tr:hover {background-color: #ddd;}
+.scholarship h1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.scholarship h2 {
+    text-align-all: center;
+}
+
+.scholarship table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+    font-family: Dubai;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 12px;
+    color: black;
+    font-family: Dubai;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+tr{
+    border-right: 1px solid #ffffff;
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
+section {
+    margin: 20px;
+    background: -webkit-linear-gradient(left, #ed7d31,   #4472ca);
+    background: linear-gradient(to right, #ed7d31,   #4472ca);
+    font-family: 'Roboto', sans-serif;
+    border-right-width: 1px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Scholarship CSS */
+/*style for schol page*/
+
+
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
