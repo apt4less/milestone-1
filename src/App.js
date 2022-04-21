@@ -8,6 +8,7 @@ import logo from "./logo.png";
 import {BrowserRouter as Router, Route, Routes,Link} from 'react-router-dom';
 import React, { Component }  from 'react';
 import './App.css';
+import PrivateRoute from "./Component/PrivateRoute";
 function App() {
 
 
@@ -21,7 +22,6 @@ function App() {
                     <a className="navbar-brand" href="/Scholarship">Scholarships</a>
                     <a className="navbar-brand" href="/Offer">Offer</a>
                     <a className="navbar-brand" href="/">Home</a>
-                    <a className="navbar-brand" href="/SignOut">Home</a>
 
                 </nav>
 
@@ -33,7 +33,7 @@ function App() {
                         <div className="col-12">
 
                             <Routes>
-                                <Route  path="/" exact element={<Home />} />
+                                <Route path="/" exact element={<PrivateRoute><Home /> </PrivateRoute>} />
                                 <Route path="/About" element={<About />}/>
                                 <Route path="/Scholarship" element={<Scholarship />}/>
                                 <Route path="/Offer" element={<Offer />}/>

@@ -121,7 +121,7 @@ h3{
 
 /*Login CSS*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-input{
+input,button,label{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -302,6 +302,7 @@ th {
     font-size: 30px;
     color: black;
     font-family: Dubai;
+    background-color: #ed7d31;
 }
 
 td {
