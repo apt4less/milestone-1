@@ -96,10 +96,10 @@ class Offer extends Component {
 <>
             <nav className="navbar navbar-dark bg-dark">
                 <img src= {logo} width="75" height="47" alt=""/>
-                <a className="navbar-brand" href="/Login">Login/SignUp</a>
+                <a className="navbar-brand" href="/SignOut">SignOut</a>
                 <a className="navbar-brand" href="/Scholarship">Scholarships</a>
                 <a className="navbar-brand" href="/Offer">Offer</a>
-                <a className="navbar-brand" href="/">Home</a>
+                <a className="navbar-brand" href="/Home">Home</a>
 
             </nav>
 
@@ -129,19 +129,19 @@ class Offer extends Component {
                     {
                         this.state.data.map((apt) => {
                             console.log(apt);
+                            let addr = encodeURIComponent(apt.address)
                             return (
                                 <tr>
-                                    <td>{apt.property_id}</td>
-                                    <td><img src={apt.photo}/></td>
+                                    <td><img style = {{width:"150px", height:"100px"}} src={apt.photo}/></td>
                                     <td>{apt.prop_type}</td>
-                                    <td>{apt.address}</td>
+                                    <td><a href={'https://www.google.com/maps/search/?api=1&query='+ addr}>{apt.address}</a></td>
                                     <td>{apt.price}</td>
                                     <td style = {{textAlign:"center"}}>{apt.beds}/{apt.baths}</td>
                                     <td>{apt.pet_policy}</td>
                                     <td>{apt.prop_status}</td>
-                                    <td>
-                                        <button type="button" onClick={(event ) => this.insert(event,apt.property_id) } onClick={(event ) => this.update() } className="Likes">Likes</button>
-                                    </td>
+                                    <td><button classname="Likes">Likes</button></td>
+
+
                                 </tr>
 
 
