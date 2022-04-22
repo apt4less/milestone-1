@@ -4,6 +4,7 @@ import logo from "../logo.png";
 
 
 class Offer extends Component {
+
     constructor(props) {
         super(props);
         this.state = {data: []};
@@ -45,12 +46,12 @@ class Offer extends Component {
 
         evt.preventDefault();
         let ca = localStorage.getItem("firebaseResponse");
-        ca = (ca ? JSON.parse(ca): "");
+        ca = (ca ? JSON.parse(ca) : "");
 
         const likes = {
             method: 'POST',
-            url: 'http://localhost:8080/api/Offer/'+ id,
-            headers: {Authorization: "Bearer " +  ca.token}
+            url: 'http://localhost:8080/api/Offer/' + id,
+            headers: {Authorization: "Bearer " + ca.token}
         };
 
         const cer = async () => {
@@ -63,6 +64,28 @@ class Offer extends Component {
             });
         }
         cer();
+    }
+
+        update(id) {
+            let ga = localStorage.getItem("firebaseResponse");
+            ga = (ga ? JSON.parse(ga): "");
+
+            const updates = {
+                method: 'GET',
+                url: 'http://localhost:8080/api/Offer/'+ id,
+                headers: {Authorization: "Bearer " + ga.token}
+            };
+
+            const ter = async () => {
+                await axios.request(updates).then((response) => {
+                    //console.log(response.data);
+
+                    this.setState({data: response.data})
+                }).catch(function (error) {
+                    console.error(error);
+                });
+            }
+            ter();
 
     }
 
@@ -117,7 +140,7 @@ class Offer extends Component {
                                     <td>{apt.pet_policy}</td>
                                     <td>{apt.prop_status}</td>
                                     <td>
-                                        <button type="button" onClick={(event ) => this.insert(event,apt.property_id) } className="Likes">Likes</button>
+                                        <button type="button" onClick={(event ) => this.insert(event,apt.property_id) } onClick={(event ) => this.update() } className="Likes">Likes</button>
                                     </td>
                                 </tr>
 
