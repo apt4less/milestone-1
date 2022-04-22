@@ -1,5 +1,6 @@
-package com.example.databasestuff.services;
+package com.example.databasestuff.controller;
 
+import com.example.databasestuff.auth.models.FirebaseUser;
 import com.example.databasestuff.auth.services.SecurityService;
 import com.example.databasestuff.models.SignUp;
 
@@ -25,7 +26,7 @@ public class AuthenticationController {
     {
         logger.info("Create session executed.");
         SecurityService securityService = new SecurityService();
-        SignUp signUp = securityService.getFirebaseUser().getUser();
+        FirebaseUser signUp = securityService.getFirebaseUser();
 
         //return the customer object in JSON format
         return ResponseEntity.ok(Collections.singletonMap("SignUp", signUp));

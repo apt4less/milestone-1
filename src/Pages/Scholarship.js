@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../logo.png";
 
 
 
@@ -6,7 +7,17 @@ import React from "react";
 function Scholarship() {
 
     return (
-        <blockquote className="blockquote text-right">
+        <>
+            <nav className="navbar navbar-dark bg-dark">
+                <img src= {logo} width="75" height="47" alt=""/>
+                <a className="navbar-brand" href="/">Login/SignUp</a>
+                <a className="navbar-brand" href="/Scholarship">Scholarships</a>
+                <a className="navbar-brand" href="/Offer">Offer</a>
+                <a className="navbar-brand" href="/Home">Home</a>
+
+            </nav>
+
+            <blockquote className="blockquote text-right">
 
 
             <h1> Scholarships</h1>
@@ -96,6 +107,7 @@ function Scholarship() {
                 <p>Contact@<a href="mailto:policebrutality@gmail.com">APT4LESS@gmail.com</a></p>
             </footer>
         </blockquote>
+            </>
     );
 }
 export default Scholarship;

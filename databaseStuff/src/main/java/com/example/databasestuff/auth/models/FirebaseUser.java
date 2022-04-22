@@ -12,6 +12,5 @@ public class FirebaseUser {
     private String picture;
     private String email;
     private boolean emailVerified;
-    private SignUp user;
 
 }

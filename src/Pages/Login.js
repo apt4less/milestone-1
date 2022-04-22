@@ -23,7 +23,7 @@ function Login() {
         if(context.currentUser != null)
         {
             context.setErrors(null, false);
-            //navigate("/");
+            navigate("/Home");
 
         }
         else {

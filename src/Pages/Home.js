@@ -4,6 +4,7 @@ import '../App.css'
 import Xavier from "../Xavier.jpg";
 import Milik from "../Milik.jpg";
 import Nehemie from "../Nehemie.jpg";
+import logo from "../logo.png";
 
 
 
@@ -13,9 +14,21 @@ function Home() {
 
         return (
             <>
-                    <div id= "banner">
-                            <h1>Apartment4Less</h1>
-                            <img src={bannerAPT4LESS} class="img-fluid" alt="Apt Banner"/>
+                <nav className="navbar navbar-dark bg-dark">
+                    <img src= {logo} width="75" height="47" alt=""/>
+                    <a className="navbar-brand" href="/SignOut">SignOut</a>
+                    <a className="navbar-brand" href="/Scholarship">Scholarships</a>
+                    <a className="navbar-brand" href="/Offer">Offer</a>
+                    <a className="navbar-brand" href="/Home">Home</a>
+                </nav>
+
+                <h1>Apartment4Less</h1>
+                    <div id= "carousel" className="carousel slide" data-ride="carousel">
+                            <div className="carousel-inner">
+                                    <div className="carsouel-item active">
+                            <img src={bannerAPT4LESS} class="img-fluid" alt="First sl"/>
+                            </div>
+                            </div>
                     </div>
 
 
@@ -82,13 +95,14 @@ function Home() {
                             </div>
 
                     </div>
-
                     <footer>
                             <p>&copy; Copyright 2021. All Rights Reserved.</p>
                             <p> Written By: Nehemie Augustin, Xavier White, Milik</p>
                             <p>Students at: <a href="https://www.famu.edu/">Florida Agricultural & Mechnical University</a></p>
                             <p>Contact@<a href="mailto:policebrutality@gmail.com">APT4LESS@gmail.com</a></p>
                     </footer>
+
+
 
             </>
 

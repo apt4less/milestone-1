@@ -9,7 +9,7 @@ function PrivateRoute({children})
     if(currentUser != null && currentUser.length > 0 )
         localStorage.setItem("user", JSON.stringify(currentUser));
 
-    return currentUser ? children : <Navigate to="/SignUp" replace={true} />
+    return currentUser ? children : <Navigate to="/Home" replace={true} />
 
 }
 export default PrivateRoute;

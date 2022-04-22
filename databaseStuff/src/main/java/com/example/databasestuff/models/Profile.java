@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data //creates setters and getters automatically
 @AllArgsConstructor //creates constructor with all values automatically
 @NoArgsConstructor
-public class Offer
+public class Profile
 {
-    private int count;
+    private String username;
 }

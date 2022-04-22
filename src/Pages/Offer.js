@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios, {Axios} from "axios";
+import logo from "../logo.png";
 
 
 class Offer extends Component {
@@ -38,17 +39,50 @@ class Offer extends Component {
         }
         req();
 
-
-
     }
 
+    insert(evt, id) {
+
+        evt.preventDefault();
+        let ca = localStorage.getItem("firebaseResponse");
+        ca = (ca ? JSON.parse(ca): "");
+
+        const likes = {
+            method: 'POST',
+            url: 'http://localhost:8080/api/Offer/'+ id,
+            headers: {Authorization: "Bearer " +  ca.token}
+        };
+
+        const cer = async () => {
+            await axios.request(likes).then((response) => {
+                //console.log(response.data);
+
+                this.setState({data: response.data})
+            }).catch(function (error) {
+                console.error(error);
+            });
+        }
+        cer();
+
+    }
 
     render() {
 
 
         return (
+<>
+            <nav className="navbar navbar-dark bg-dark">
+                <img src= {logo} width="75" height="47" alt=""/>
+                <a className="navbar-brand" href="/Login">Login/SignUp</a>
+                <a className="navbar-brand" href="/Scholarship">Scholarships</a>
+                <a className="navbar-brand" href="/Offer">Offer</a>
+                <a className="navbar-brand" href="/">Home</a>
 
-            <blockquote className="blockquote text-right">
+            </nav>
+
+        <blockquote className="blockquote text-right">
+
+
 
                 <h1>OFFERS</h1>
 
@@ -66,6 +100,7 @@ class Offer extends Component {
                         <th>Bedrooms/Bathroom</th>
                         <th>Pet</th>
                         <th>Status</th>
+                        <th>Likes</th>
                     </tr>
 
                     {
@@ -73,6 +108,7 @@ class Offer extends Component {
                             console.log(apt);
                             return (
                                 <tr>
+                                    <td>{apt.property_id}</td>
                                     <td><img src={apt.photo}/></td>
                                     <td>{apt.prop_type}</td>
                                     <td>{apt.address}</td>
@@ -80,6 +116,9 @@ class Offer extends Component {
                                     <td style = {{textAlign:"center"}}>{apt.beds}/{apt.baths}</td>
                                     <td>{apt.pet_policy}</td>
                                     <td>{apt.prop_status}</td>
+                                    <td>
+                                        <button type="button" onClick={(event ) => this.insert(event,apt.property_id) } className="Likes">Likes</button>
+                                    </td>
                                 </tr>
 
 
@@ -90,8 +129,16 @@ class Offer extends Component {
                     }
                 </table>
 
+                <footer>
+                    <p>&copy; Copyright 2021. All Rights Reserved.</p>
+                    <p> Written By: Nehemie Augustin, Xavier White, Milik</p>
+                    <p>Students at: <a href="https://www.famu.edu/">Florida Agricultural & Mechnical University</a></p>
+                    <p>Contact@<a href="mailto:policebrutality@gmail.com">APT4LESS@gmail.com</a></p>
+                </footer>
+
 
             </blockquote>
+    </>
         )
     }
 

@@ -5,7 +5,7 @@ import {getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword} fro
 
 
 export const AuthContext = React.createContext({
-    currentUser: {},
+    currentUser: null,
     cart:[],
     errors: [],
     refresh: null,
@@ -64,6 +64,7 @@ export class AuthProvider extends Component {
             initializeApp(firebaseConfig);
 
                     const auth=getAuth();
+                    this.state.setCurrentUser(null);
                     createUserWithEmailAndPassword(auth, email, password)
                     .then( async (userCredential) =>{
 
@@ -87,7 +88,7 @@ export class AuthProvider extends Component {
                     })
                     .catch((error) => {
                         console.log(error);
-                        this.state.setErrors(error.response.data, false);
+                        //this.state.setErrors(error.response.data, false);
                     });
         },
         signIn: async (email, password)=>{
@@ -104,6 +105,7 @@ export class AuthProvider extends Component {
             // Initialize Firebase
             initializeApp(firebaseConfig);
 
+            this.state.setCurrentUser(null);
             const auth = getAuth();
             signInWithEmailAndPassword(auth, email, password)
                 .then(async (cred)=>{
@@ -127,8 +129,9 @@ export class AuthProvider extends Component {
                     })
                 })
                 .catch(function (err) {
+                    console.log(err)
                     // Handle Errors here.
-                    this.state.setErrors(err.response.data, false);
+                    //this.state.setErrors(err.error, false);
                 });
 
             //refresh token every 30 minutes

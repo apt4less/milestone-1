@@ -6,6 +6,7 @@ import React from "react";
 function About() {
 
     return (
+        <>
         <div className="container">
 
             <div className="card">
@@ -51,6 +52,13 @@ function About() {
                 </div>
             </div>
         </div>
+    <footer>
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        <p> Written By: Nehemie Augustin, Xavier White, Milik</p>
+        <p>Students at: <a href="https://www.famu.edu/">Florida Agricultural & Mechnical University</a></p>
+        <p>Contact@<a href="mailto:policebrutality@gmail.com">APT4LESS@gmail.com</a></p>
+    </footer>
+    </>
     );
 }
 export default About;

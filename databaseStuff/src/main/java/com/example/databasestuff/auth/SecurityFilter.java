@@ -104,15 +104,6 @@ public class SecurityFilter extends OncePerRequestFilter {
             user.setPicture(decodedToken.getPicture());
             user.setIssuer(decodedToken.getIssuer());
             user.setEmailVerified(decodedToken.isEmailVerified());
-
-            Firestore db = FirestoreClient.getFirestore();
-            Query query = db.collection("User").whereEqualTo("uid", decodedToken.getUid());
-            ApiFuture<QuerySnapshot> qs = query.get();
-            if(!qs.get().isEmpty())
-            {
-                SignUp u = qs.get().getDocuments().get(0).toObject(SignUp.class);
-                user.setUser(u);
-            }
         }
         return user;
     }

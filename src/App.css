@@ -99,7 +99,7 @@ footer a {
 
 /*home page style*/
 
-.img-fluid{
+.img-fluid , .d-block w-100{
     width: 1344px;
     height: 350px;
     border: 3px solid #ed7d31;
@@ -315,8 +315,57 @@ td {
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 }
 
+tr:hover {background-color: #ddd;}
+
+
+th {
+    padding: 20px 15px 10px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    font-family: Verdana;
+    background-color: #ed7d31;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    font-weight: 300px;
+    font-size: 20px;
+    font-family: "sans-serif";
+    color: black;
+    font-family: Dubai;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
 tr{
     border-right: 1px solid #ffffff;
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
+section {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-right-width: 1px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+/* Offer page*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
 
 }
 
@@ -345,5 +394,8 @@ section {
 /* demo styles */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
+/*liked*/
 
 
