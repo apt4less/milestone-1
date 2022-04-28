@@ -53,48 +53,58 @@ function Home() {
                     </aside>
 
 
+                <div className="card-group m-2">
+                    <div className="card">
+                        <img src={Nehemie} className="Nehemie" alt="a snow-capped mountain range"/>
+                        <div className="card-body">
+                            <h2 className="card-title">Nehemie Augustin</h2>
+                            <p className="card-text">I was born and raised in Haiti.
+                                I'am currently attending Florida Agricultural & Mechanical University pursuing my
+                                bachelor’s degree in Computer Science.
+                                I'm also working as a lab technician at KWB Pathology. After graduating,
+                                I want to acquire knowledge and skills in having an opportunity to work in a
+                                professional environment. Eventually,
+                                I want to build my own software company to give back to the community.</p>
+                            <a href="https://www.linkedin.com/in/nehemie-a-902964122/"
+                               className="btn btn-secondary">Linkedln</a>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={Xavier} className="Xavier"
+                             alt="a snowy mountain with clouds behind it"/>
+                        <div className="card-body">
+                            <h2 className="card-title">Xavier White</h2>
+                            <p className="card-text">I was born and raised in Gainesville. I am a Senior majoring in
+                                Computer Science at Florida Agricultural & Mechanical University. Upon graduating
+                                I plan on beginning my path toward cloud computing. Currently, I am working on my
+                                CompTIA A+ and will
+                                pursue a CCNA certification next. I enjoy accomplishing short term goals and learning
+                                along the way.
+                                Also, I have a dog named Pluto.</p>
+                            <a href="https://www.linkedin.com/in/xavier-white-/"
+                               className="btn btn-secondary">Linkedln</a>
+                        </div>
+                    </div>
 
-                    <div className="card-group m-2">
-                            <div className="card">
-                                    <img src={Nehemie} class="Nehemie" alt="a snow-capped mountain range"/>
-                                    <div className="card-body">
-                                            <h2 className="card-title">Nehemie Augustin</h2>
-                                            <p className="card-text">I was born and raised in Haiti.
-                                                    I'am currently attending Florida Agricultural & Mechanical University pursuing my bachelor’s degree in Computer Science.
-                                                    I'm also working as a lab technician at KWB Pathology. After graduating,
-                                                    I want to acquire knowledge and skills in having an opportunity to work in a professional environment. Eventually,
-                                                    I want to build my own software company to give back to the community.</p>
-                                            <a href="#" className="btn btn-secondary">Linkedln</a>
-                                    </div>
-                            </div>
-                            <div className="card">
-                                    <img src={Xavier} class="Xavier"
-                                         alt="a snowy mountain with clouds behind it"/>
-                                    <div className="card-body">
-                                            <h2 className="card-title">Xavier White</h2>
-                                            <p className="card-text">I was born and raised in Gainesville. I am a Senior majoring in Computer Science at Florida Agricultural & Mechanical University. Upon graduating
-                                                    I plan on beginning my path toward cloud computing. Currently, I am working on my CompTIA A+ and will
-                                                    pursue a CCNA certification next. I enjoy accomplishing short term goals and learning along the way.
-                                                    Also, I have a dog named Pluto.</p>
-                                            <a href="#" className="btn btn-secondary">Linkedln</a>
-                                    </div>
-                            </div>
+                    <div className="card">
+                        <img src={Milik} className="Milik"
+                             alt="a mountain range under a thin layer of clouds"/>
+                        <div className="card-body">
+                            <h2 className="card-title">Milik Bennett</h2>
+                            <p className="card-text">I'm from the strawberry capital of Florida. I attended Plant City
+                                High school.
+                                I'm currently a CIS student at Florida Agricultural & Mechanical University. I really
+                                into cars. My favorite movie series is the "Fast and Furious".
+                                My goal is to continue to enhance my programming skills along my journey. My favorite
+                                quote is "All of your dreams can come true, if you have the courage to pursue them".</p>
+                            <a href="https://www.linkedin.com/in/milik-bennett-spence-43660a1a0"
+                               className="btn btn-secondary">Linkedln</a>
 
-                            <div className="card">
-                                    <img src={Milik} class="Milik"
-                                         alt="a mountain range under a thin layer of clouds"/>
-                                    <div className="card-body">
-                                            <h2 className="card-title">Milik Bennett</h2>
-                                            <p className="card-text">I'm from the strawberry capital of Florida. I attended Plant City High school.
-                                                    I'm currently a CIS student at Florida Agricultural & Mechanical University. I really into cars. My favorite movie series is the "Fast and Furious".
-                                                    My goal is to continue to enhance my programming skills along my journey. My favorite quote is "All of your dreams can come true, if you have the courage to pursue them".</p>
-                                            <a href="#" className="btn btn-secondary">Linkedln</a>
-
-                                    </div>
-
-                            </div>
+                        </div>
 
                     </div>
+
+                </div>
                     <footer>
                             <p>&copy; Copyright 2021. All Rights Reserved.</p>
                             <p> Written By: Nehemie Augustin, Xavier White, Milik</p>

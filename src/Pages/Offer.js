@@ -139,7 +139,7 @@ class Offer extends Component {
                                     <td style = {{textAlign:"center"}}>{apt.beds}/{apt.baths}</td>
                                     <td>{apt.pet_policy}</td>
                                     <td>{apt.prop_status}</td>
-                                    <td><button classname="Likes">Likes</button></td>
+                                    <td><button classname="Likes" type="button" onClick={(event) => this.insert(event,apt.property_id)}>Likes</button></td>
 
 
                                 </tr>
